@@ -1,9 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Header = styled.header`
-  color: ${(props) => props.theme.color.PRIMARY};
-`;
+import { Header } from './Navigation.styled';
 
 const HeaderComponent: React.FC = () => {
   return (
