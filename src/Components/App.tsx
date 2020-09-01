@@ -1,14 +1,14 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import theme from '../styles/theme';
-import HeaderComponent from './Navigation';
 import { GlobalStyle } from '../styles/Global.styled';
+import Router from './Router';
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <HeaderComponent />
+      <Router />
     </ThemeProvider>
   );
 };
