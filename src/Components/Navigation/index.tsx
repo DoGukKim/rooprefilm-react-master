@@ -47,7 +47,9 @@ const HeaderComponent: React.FC = () => {
                 </GnbLink>
               </GnbItem>
               <GnbItem>
-                <GnbLink to="">Contact</GnbLink>
+                <GnbLink to="/" onClick={(e) => e.preventDefault()}>
+                  Contact
+                </GnbLink>
               </GnbItem>
             </GnbList>
           </Gnb>

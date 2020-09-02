@@ -24,6 +24,7 @@ export const GnbList = styled.ul`
   width: 33.33%;
 `;
 export const GnbItem = styled.li`
+  position: relative;
   width: 100%;
 `;
 export const GnbLink = styled(Link)`
@@ -31,7 +32,7 @@ export const GnbLink = styled(Link)`
   &::after {
     position: absolute;
     right: 0;
-    bottom: -8px;
+    bottom: -6px;
     left: 0;
     content: '';
     height: 1px;
