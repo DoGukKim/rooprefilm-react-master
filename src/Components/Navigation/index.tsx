@@ -11,6 +11,7 @@ import {
   LogoImg,
   GnbList,
   GnbItem,
+  GnbLink,
 } from './Navigation.styled';
 
 const HeaderComponent: React.FC = () => {
@@ -22,10 +23,12 @@ const HeaderComponent: React.FC = () => {
           <Gnb>
             <GnbList>
               <GnbItem>
-                <Link to="/">Home</Link>
+                <GnbLink to="/">Home</GnbLink>
               </GnbItem>
               <GnbItem>
-                <Link to="/">Categorize</Link>
+                <GnbLink to="/" onClick={(e) => e.preventDefault()}>
+                  Categorize
+                </GnbLink>
               </GnbItem>
             </GnbList>
             <Logo>
@@ -35,16 +38,16 @@ const HeaderComponent: React.FC = () => {
             </Logo>
             <GnbList>
               <GnbItem>
-                <Link
+                <GnbLink
                   to="/"
                   onClick={() =>
                     window.open('https://smartstore.naver.com/roopre_film')
                   }>
-                  Shop!
-                </Link>
+                  Shop
+                </GnbLink>
               </GnbItem>
               <GnbItem>
-                <Link to="">Contact</Link>
+                <GnbLink to="">Contact</GnbLink>
               </GnbItem>
             </GnbList>
           </Gnb>

@@ -15,7 +15,7 @@ export default () => {
       <HeaderComponent />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/beauty" exact component={SubBeauty} />
+        <Route path="/beauty" component={SubBeauty} />
         <Redirect from="*" to="/" />
       </Switch>
     </Router>

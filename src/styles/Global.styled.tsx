@@ -1,10 +1,19 @@
 import { createGlobalStyle } from 'styled-components';
-
 export const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'MapoFlowerIsland';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: 'MapoFlowerIsland';
+  font-size:14px; 
 }
 .cf:after,
 .cf:before {
