@@ -40,7 +40,7 @@ const HeaderComponent: React.FC = () => {
                   onClick={() =>
                     window.open('https://smartstore.naver.com/roopre_film')
                   }>
-                  Shop
+                  Shop!
                 </Link>
               </GnbItem>
               <GnbItem>
