@@ -37,7 +37,7 @@ export const GnbLink = styled(Link)`
     height: 1px;
     background-color: ${(props) => props.theme.color.SECONDARY};
     transform: scaleX(0);
-    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
   &:hover::after {
     transform: scaleX(1);

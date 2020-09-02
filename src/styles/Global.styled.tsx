@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
 @font-face {
-  font-family: 'MapoFlowerIsland';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+  font-family: 'MapoGoldenPier';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 body {
-  font-family: 'MapoFlowerIsland';
+  font-family: 'MapoGoldenPier';
   font-size:14px; 
 }
 .cf:after,
