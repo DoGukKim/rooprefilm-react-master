@@ -1,9 +1,10 @@
 import React from 'react';
+import HomeContainer from '../Containers/Home';
 
 const Home = () => {
   return (
     <>
-      <h1>I`m Home</h1>
+      <HomeContainer />
     </>
   );
 };
