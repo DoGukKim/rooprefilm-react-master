@@ -1,5 +1,13 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+// images
+import beautyImage from '../../assets/images/main-ben/beauty.jpg';
+import snapImage from '../../assets/images/main-ben/snap.jpg';
+import weddingImage from '../../assets/images/main-ben/wedding.jpg';
 
+interface IProps {
+  beauty?: any;
+  snap?: any;
+}
 export const Section = styled.section`
   padding: 0 10px;
   @media screen and (max-width: 768px) {
@@ -22,4 +30,15 @@ export const SlideItem = styled.div`
 export const HeroImage = styled.picture`
   display: block;
   height: 100%;
+  ${(props: IProps) =>
+    props.beauty &&
+    props.beauty === 'da' &&
+    css`
+      background-image: url(${beautyImage});
+    `}
+  ${(props: IProps) =>
+    props.snap &&
+    css`
+      background-image: url(${snapImage});
+    `}
 `;
